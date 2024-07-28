@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .button{
+  width: 15%;
+  height: 40px;
+  margin-left: 450px;
+  margin-bottom: 20px;
+  background-color: yellow;
+  color: black;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: rgb(17, 192, 64);
+  color:rgb(195, 16, 16)
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="navbar">
+    <div class="navdiv">
+      <img src="images/logo.jpg" class="logo">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="menu.html" class="menu">Menu</a></li>
+      <li><a href="order.html" class="order">Order Online</a></li>
+    </ul>
+  </div>
+</div>
+<div class="form">
+    <div class="nameEmail">
+    <label for="name">Name:</label>
+    <input type="text" id="name" 
+    style="margin-bottom: 30px;
+    margin-right: 5px;
+    color: rgb(237, 27, 36)";>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    </div>
+    <div class="deliveryPickup">
+    <input type="radio" id="delivery" name="way" value="delivery">
+    <label for="delivery">Delivery</label>
+    <input type="radio" id="pickup" name="way" value="pickup">
+    <label for="pickup">Pickup</label>
+    </div>
+    
+    <div class="menu">
+    <label for="menu">Menu:</label>
+    <select name="menu" id="menu">
+      <option value="">CAPRESE PIZZA</option>
+      <option value="">BISMARK PIZZA</option>
+      <option value="">CALIFORNIA PIZZA</option>
+      <option value="">BROOKLYN STYLE PIZZA</option>
+      <option value="">BUFFALO STYLE PIZZA</option>
+      <option value="">BROOKLYN STYLE PIZZA</option>
+    </select>
+  </div>
+  <div class="size">
+    <label type="size">Choose your size:</label>
+    <input type="checkbox" id="size1">
+    <label for="size1">10</label>
+    <input type="checkbox" id="size2">
+    <label for="size2">12</label>
+    <input type="checkbox" id="size1">
+    <label for="size3">14</label>
+  </div>
+    <input type="button" class="button" value="Order">
+  
+ 
+
+</div>
+</body>
+</html>
